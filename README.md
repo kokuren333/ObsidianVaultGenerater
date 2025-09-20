@@ -1,12 +1,40 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# ObsidianVaultGenerater
 
-# Run and deploy your AI Studio app
+## Features
 
-This contains everything you need to run your app locally.
+This app is an **Obsidian Vault Deep-Dive Agent** powered by Gemini.  
+It allows you to generate an entire Obsidian vault automatically and download it as a ZIP file.
 
-View your app in AI Studio: https://ai.studio/apps/drive/1lUz_xyB2kz_zGZb7Au7Io9o7ar8wZ_XO
+### Generation Modes
+- **Single Topic**: Start from a single theme and generate a tree of interconnected knowledge notes.  
+- **MOC (Map of Concepts)**: Start from multiple themes, branching out into a structured knowledge map with a central MOC entry point.
+
+### Configurable Expansion
+- **Derived Notes / Article**  
+  Defines how many internal links (i.e., “next concepts to learn”) will be generated from each article.  
+- **Max Derivation Depth**  
+  Controls how many times the derivation process repeats.  
+  ⚠️ Be careful: setting this too high can cause exponential growth in the number of notes.  
+- **Article Safety Cap**  
+  Sets an upper bound on the total number of generated articles.  
+  Setting this to `0` disables the cap.
+
+### Customization
+- **Additional Prompt**: Add specific instructions (e.g., “Write in a clear and beginner-friendly style”).  
+- **Advanced Options**:  
+  - *Web Search Disabled*: Generate only from model knowledge without external sources.  
+  - *Parallel Generation*: Speed up generation by using multiple workers.  
+- **Parallel Workers**: Number of threads for concurrent generation.
+
+### Output
+- **Vault Contents Panel**: Displays generated notes in real time.  
+- **Article Preview Panel**: Shows the preview of each note.  
+- **Download ZIP**: Export the generated vault in ZIP format and import directly into Obsidian.  
+
+### Logging & Controls
+- **Start / Stop**: Control the generation process interactively.  
+- **Progress & Logs**: Monitor the generation steps in real time. 
+
 
 ## Run Locally
 
