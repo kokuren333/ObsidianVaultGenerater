@@ -1,0 +1,5 @@
+{
+  "name": "Obsidian Vault Deep-Dive Agent",
+  "description": "A web application to generate a deep-dive Obsidian Vault on any topic. It can use AI knowledge alone or perform web research to create interconnected notes, which can be viewed as they are generated and downloaded as a ZIP file.",
+  "requestFramePermissions": []
+}
